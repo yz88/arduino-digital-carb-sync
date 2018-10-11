@@ -35,8 +35,6 @@ int DifferenceRight = 0;
   
 void setup() {
   Serial.begin(115200);
-  Serial.println("Setup");
-  Serial.println(ADMUX);
   
   pinMode(sensor1, INPUT);
   pinMode(sensor2, INPUT);
@@ -44,33 +42,23 @@ void setup() {
   // clear ADLAR in ADMUX (0x7C) to right-adjust the result
   // ADCL will contain lower 8 bits, ADCH upper 2 (in last two bits)
   cbi(ADMUX, ADLAR);
-  Serial.println("Set ADLAR in ADMUX");
-  Serial.println(ADMUX);
 
   // Set REFS1..0 in ADMUX (0x7C) to change reference voltage to the
   // proper source (01)
   sbi(ADMUX, REFS0);
   cbi(ADMUX, REFS1);
-  Serial.println("Set REFS1..0 in ADMUX");
-  Serial.println(ADMUX);
   
   // Set MUX3..0 in ADMUX (0x7C) to read from ADC4 (0100) 
   cbi(ADMUX, MUX3);
   sbi(ADMUX, MUX2);
   cbi(ADMUX, MUX1);
   cbi(ADMUX, MUX0);
-  Serial.println("Set MUX3..0 in ADMUX");
-  Serial.println(ADMUX);
 
   // Set ADEN in ADCSRA (0x7A) to enable the ADC.
   sbi(ADCSRA, ADEN);  // enable ADC
-  Serial.println("Set ADEN in ADCSRA");
-  Serial.println(ADCSRA);
 
   // Set ADATE in ADCSRA (0x7A) to enable auto-triggering.
   sbi(ADCSRA, ADATE); // enable auto trigger
-  Serial.println("Set ADATE in ADCSRA");
-  Serial.println(ADCSRA);
   
   // Clear ADTS2..0 in ADCSRB (0x7B) to set trigger mode to free running (000).
   // This means that as soon as an ADC has finished, the next will be
@@ -78,22 +66,16 @@ void setup() {
   cbi(ADCSRB, ADTS2);
   cbi(ADCSRB, ADTS1);
   cbi(ADCSRB, ADTS0);
-  Serial.println("Set ADTS2..0 in ADCSRB");
-  Serial.println(ADCSRA);
 
   // Set ADPS2:0: ADC Prescaler Select Bits to 128 (111) (16000KHz/128 = 125KHz)
   // Above 200KHz 10-bit results are not reliable.
   sbi(ADCSRA, ADPS2);
   sbi(ADCSRA, ADPS1);
   sbi(ADCSRA, ADPS0);
-  Serial.println("Set ADPS2..0 in ADCSRA");
-  Serial.println(ADCSRA);
 
   // Set ADIE in ADCSRA (0x7A) to enable the ADC interrupt.
   // Without this, the internal interrupt will not trigger.
   sbi(ADCSRA, ADIE);  // enable ADC interrupt when measurement complete
-  Serial.println("Set ADIE in ADCSRA");
-  Serial.println(ADCSRA);
 
   // Enable global interrupts
   // AVR macro included in <avr/interrupts.h>, which the Arduino IDE
@@ -105,8 +87,7 @@ void setup() {
 
   // Set ADSC: ADC Start Conversion in ADCSRA (0x7A) to start the ADC conversion
   sbi(ADCSRA, ADSC);  // start ADC measurements
-  Serial.println("Set ADSC in ADCSRA");
-  Serial.println(ADCSRA);
+  
 
   // calibrate sensors
   PressureLeft = analogVal_ADC4;
