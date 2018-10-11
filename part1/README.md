@@ -6,4 +6,4 @@ Part 1 covers fast reading of analog values.
 * Analog Pressure Sensors (MPX4115AP)
 
 ## schematic
-![Fritzing](https://github.com/yz88/arduino-digital-carb-sync/blob/master/part1/arduino-carb-sync-part1-0.PNG)
+![Fritzing](https://github.com/yz88/arduino-digital-carb-sync/blob/master/part1/arduino-carb-sync-part1-001.PNG)
