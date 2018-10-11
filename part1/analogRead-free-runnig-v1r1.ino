@@ -87,17 +87,28 @@ void setup() {
 
   // Set ADSC: ADC Start Conversion in ADCSRA (0x7A) to start the ADC conversion
   sbi(ADCSRA, ADSC);  // start ADC measurements
-  
 
-  // calibrate sensors
-  PressureLeft = analogVal_ADC4;
-  PressureRight = analogVal_ADC5;
-  if (PressureLeft > PressureRight){
-    DifferenceRight = PressureLeft - PressureRight;
-  } else {
-    DifferenceLeft = PressureRight - PressureLeft;
+  delay(100);
+  
+  // calibrate sensors to the same level
+  // get some values and find the lowest value
+  for (int i=0; i <= 255; i++){
+    PressureLeft = analogVal_ADC4;
+    PressureRight = analogVal_ADC5;
+    if (PressureLeft < previousPressureLeft) {
+      previousPressureLeft = PressureLeft;  // store the lowest value
+    }
+    if (PressureRight < previousPressureRight) {
+      previousPressureRight = PressureRight;  // store the lowest value
+    }    
   }
-    
+
+  // compare the lowest values of ADC4 and ADC5, then calculating the difference
+  if (previousPressureLeft > previousPressureRight){
+    DifferenceRight = previousPressureLeft - previousPressureRight;
+  } else {
+    DifferenceLeft = previousPressureRight - previousPressureLeft;
+  }
 }
 
 
@@ -126,8 +137,7 @@ ISR(ADC_vect){
     analogVal_ADC4 = ADCL | (ADCH << 8);
     // Set MUX3..0 in ADMUX (0x7C) to read from ADC4 (0100) to read from ACD5 (0101)
     sbi(ADMUX, MUX0);
-  }
-  else if (ADMUX == 0x45){
+  } else if (ADMUX == 0x45){
     // Must read low first
     analogVal_ADC5 = ADCL | (ADCH << 8);
     // Set MUX3..0 in ADMUX (0x7C) to read from ADC5 (0101) to read from ACD5 (0100)
