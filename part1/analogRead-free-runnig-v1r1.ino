@@ -16,11 +16,9 @@ unsigned long time;
 
 int PressureLeft = 1023;
 int previousPressureLeft = 1023;
-int PressureLeftMax = 1023;
 
 int PressureRight = 1023;
 int previousPressureRight = 1023;
-int PressureRightMax = 1023;
 
 int DifferenceLeft = 0;
 int DifferenceRight = 0;
