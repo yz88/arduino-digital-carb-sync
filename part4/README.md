@@ -12,3 +12,5 @@ Part 4 puts all other parts togehter.
 
 ## schematic
 ![Fritzing](https://github.com/yz88/arduino-digital-carb-sync/blob/master/part4/arduino-carb-sync-part4-001.PNG)
+
+![Code](https://github.com/yz88/arduino-digital-carb-sync/blob/master/part4/arduino-carb-sync-nextion.ino)
