@@ -1,6 +1,6 @@
 # arduino-nextion-serial-communictaion
 Part 4 puts all other parts togehter. 
-* freerunig analog read
+* freeruning analog read
 * smoothing the values
 * direct serial communication between Arduino and Nextion Display
 
