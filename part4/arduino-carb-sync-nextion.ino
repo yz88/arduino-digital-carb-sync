@@ -170,25 +170,28 @@ void loop(){
   }
 
   Serial.print("add 1,0,");
-  Serial.print((int)PressureLeftFiltered/4);
+  // Nextion isplay waveform accepts values between 0 - 255
+  // Measured values are in the range from 850 down to 400, thus divide the
+  // values by 5 to fit the waveform's value range
+  Serial.print((int)PressureLeftFiltered/5);
   Serial.write(0xff);
   Serial.write(0xff);
   Serial.write(0xff);
 
   Serial.print("add 1,1,");
-  Serial.print((int)PressureLeftMin/4);
+  Serial.print((int)PressureLeftMin/5);
   Serial.write(0xff);
   Serial.write(0xff);
   Serial.write(0xff);
 
   Serial.print("add 1,2,");
-  Serial.print((int)PressureRightFiltered/4);
+  Serial.print((int)PressureRightFiltered/5);
   Serial.write(0xff);
   Serial.write(0xff);
   Serial.write(0xff);
 
   Serial.print("add 1,3,");
-  Serial.print((int)PressureRightMin/4);
+  Serial.print((int)PressureRightMin/5);
   Serial.write(0xff);
   Serial.write(0xff);
   Serial.write(0xff);
