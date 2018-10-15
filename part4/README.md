@@ -8,7 +8,7 @@ Part 4 puts all other parts togehter.
 * Arduino Uno
 * Analog Pressure Sensors (MPX4115AP)
 * Capacitors 1µF and 100nF
-* Nextion NX3224T024_011
+* Nextion NX3224T024_011R
 
 ## schematic
 ![Fritzing](https://github.com/yz88/arduino-digital-carb-sync/blob/master/part4/arduino-carb-sync-part4-001.PNG)
