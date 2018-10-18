@@ -9,7 +9,6 @@
 volatile int readFlag;      // High when a value is ready to be read
 volatile int analogVal_ADC4;     // Value to store analog result from ADC4
 volatile int analogVal_ADC5;     // Value to store analog result from ADC5
-unsigned long time;
 
 #define sensor1 4           // left pressure sensor
 #define sensor2 5           // right pressure sensor
