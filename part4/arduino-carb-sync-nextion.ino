@@ -12,13 +12,17 @@ unsigned long time;
 #define sensor1 4           // left pressure sensor
 #define sensor2 5           // right pressure sensor
 
+//#define DEBUG // toogle debug: uncomment-> debug ON
+
 int PressureLeft = 1023;
 int previousPressureLeft = 1023;
+int PressureLeftTemp = 1023;
 int PressureLeftMin = 1023;
 float PressureLeftFiltered = 1023;
 
 int PressureRight = 1023;
 int previousPressureRight = 1023;
+int PressureRightTemp = 1023;
 int PressureRightMin = 1023;
 float PressureRightFiltered = 1023;
 
@@ -162,21 +166,30 @@ void loop(){
   }
 
   // check for min values
+  // The pressure may flutter at the top dead center of the engine.
+  // To exclude this range, the measurement only starts at a value below 780.
   if (PressureLeftFiltered < previousPressureLeft && PressureLeftFiltered < 780) {
-    PressureLeftMin = PressureLeftFiltered;
-  }
-  if (PressureRightFiltered < previousPressureRight && PressureRightFiltered < 780) {
-    PressureRightMin = PressureRightFiltered;
+    PressureLeftTemp = PressureLeftFiltered;
+  } else {
+    PressureLeftMin = PressureLeftTemp;
   }
 
+  if (PressureRightFiltered < previousPressureRight && PressureRightFiltered < 780) {
+    PressureRightTemp = PressureRightFiltered;
+  } else {
+    PressureRightMin = PressureRightTemp;
+  }
+
+#ifdef DEBUG
   Serial.print("add 1,0,");
-  // Nextion isplay waveform accepts values between 0 - 255
+  // Nextion display waveform accepts values between 0 - 255
   // Measured values are in the range from 850 down to 400, thus divide the
   // values by 5 to fit the waveform's value range
   Serial.print((int)PressureLeftFiltered/5);
   Serial.write(0xff);
   Serial.write(0xff);
   Serial.write(0xff);
+#endif
 
   Serial.print("add 1,1,");
   Serial.print((int)PressureLeftMin/5);
@@ -184,11 +197,13 @@ void loop(){
   Serial.write(0xff);
   Serial.write(0xff);
 
+#ifdef DEBUG
   Serial.print("add 1,2,");
   Serial.print((int)PressureRightFiltered/5);
   Serial.write(0xff);
   Serial.write(0xff);
   Serial.write(0xff);
+#endif
 
   Serial.print("add 1,3,");
   Serial.print((int)PressureRightMin/5);
