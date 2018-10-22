@@ -1,4 +1,4 @@
-# arduino-free-running-analog-read
+# part 1 - arduino-free-running-analog-read
 Part 1 covers fast reading of analog values. The values are raw values without smoothing.
 
 ## bill of material
