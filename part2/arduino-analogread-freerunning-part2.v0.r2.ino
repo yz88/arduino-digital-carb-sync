@@ -159,7 +159,7 @@ void loop(){
     PressureRightFiltered = PressureRight;
   }
 
-  TimeStamp = micros();
+  TimeStamp = millis();
 
   // check for min values
   // The pressure may flutter at the top dead center of the engine.
