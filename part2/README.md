@@ -13,3 +13,5 @@ Part 2 covers fast reading and smoothing of analog values. Additionally the min 
 The following graph shows the measurement curves of the two pressure sensors. The blue line shows the first pressure sensor (right cylinder), the grenn line the second (left cylinder). The orange an red line depics the minimum values from each cylinder.
 
 ![Serial Plot](https://github.com/yz88/arduino-digital-carb-sync/blob/master/part2/serial-plot-part2.PNG)
+
+If the orange and red lines are on top of each other, then the carburettors run synchronously.
