@@ -6,6 +6,7 @@ Motorcycle carburetor synchronization based on Arduino Uno, Nextion Display and 
 * Nextion Display (NX3224T024_011R (R: Resistive touchscreen) )
 * Analog Pressure Sensors (MPX4115AP)
 
+## step by step development
 ![Part 1 - Arduino freerunning analog read (first steps)](https://github.com/yz88/arduino-digital-carb-sync/blob/master/part1/README.md)
 
 ![Part 2 - Arduino freerunning analog read and smoothing](https://github.com/yz88/arduino-digital-carb-sync/blob/master/part2/README.md)
