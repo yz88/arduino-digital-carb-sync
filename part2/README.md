@@ -10,6 +10,6 @@ Part 2 covers fast reading and smoothing of analog values. Additionally the min 
 ![Fritzing](https://github.com/yz88/arduino-digital-carb-sync/blob/master/part1/arduino-carb-sync-part1-001.PNG)
 
 ## serial plot
-The following graph shows the measurement curves of the two pressure sensors. The blue line shows the first pressure sensor (right cylinder), the red line the second (left cylinder).
+The following graph shows the measurement curves of the two pressure sensors. The blue line shows the first pressure sensor (right cylinder), the grenn line the second (left cylinder). The orange an red line depics the minimum values from each cylinder.
 
 ![Serial Plot](https://github.com/yz88/arduino-digital-carb-sync/blob/master/part2/serial-plot-part2.PNG)
