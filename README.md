@@ -6,7 +6,7 @@ The part of the signal that ramps downward is the intake stroke of the engine. T
 
 ![Pressure in the intake duct.](https://github.com/yz88/arduino-digital-carb-sync/blob/master/pressure-intake-duct.png)
 
-The entire vacuum signal from the intake stroke alone is analyzed for synchronization by finding the min peak of the vacuum.
+The entire vacuum signal from the intake stroke alone is analyzed for synchronization by finding the min peak of the vacuum. If the min peaks of both cylinders are on the same level, the carburetors are syncronized.
 
 ## bill of material
 * Arduino Uno
