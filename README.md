@@ -14,10 +14,10 @@ The entire vacuum signal from the intake stroke alone is analyzed for synchroniz
 * Analog Pressure Sensors (MPX4115AP)
 
 ## step by step development
-![Part 1 - Arduino freerunning analog read (first steps)](https://github.com/yz88/arduino-digital-carb-sync/blob/master/part1/README.md)
+![Part 1 - Arduino freerunning analog read (first steps)](https://github.com/yz88/arduino-digital-carb-sync/blob/master/part1/)
 
-![Part 2 - Arduino freerunning analog read and smoothing](https://github.com/yz88/arduino-digital-carb-sync/blob/master/part2/README.md)
+![Part 2 - Arduino freerunning analog read and smoothing](https://github.com/yz88/arduino-digital-carb-sync/blob/master/part2/)
 
-![Part 3 - Arduino and Nextion Display (first steps)](https://github.com/yz88/arduino-digital-carb-sync/blob/master/part3/README.md)
+![Part 3 - Arduino and Nextion Display (first steps)](https://github.com/yz88/arduino-digital-carb-sync/blob/master/part3/)
 
-![Part 4 - Arduino and Nextion Display serial plot](https://github.com/yz88/arduino-digital-carb-sync/blob/master/part3/README.md)
+![Part 4 - Arduino and Nextion Display serial plot](https://github.com/yz88/arduino-digital-carb-sync/blob/master/part3/)
