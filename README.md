@@ -20,4 +20,4 @@ The entire vacuum signal from the intake stroke alone is analyzed for synchroniz
 
 ![Part 3 - Arduino and Nextion Display (first steps)](https://github.com/yz88/arduino-digital-carb-sync/blob/master/part3/)
 
-![Part 4 - Arduino and Nextion Display serial plot](https://github.com/yz88/arduino-digital-carb-sync/blob/master/part3/)
+![Part 4 - Arduino and Nextion Display serial plot](https://github.com/yz88/arduino-digital-carb-sync/blob/master/part4/)
