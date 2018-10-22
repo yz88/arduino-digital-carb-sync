@@ -11,4 +11,5 @@ Part 1 covers fast reading of analog values. The values are raw values without s
 
 ## Serial Plot
 The following graph shows the measurement curves of the two pressure sensors. The blue line shows the first pressure sensor (right cylinder), the red line the second (left cylinder).
+
 ![Serial Plot](https://github.com/yz88/arduino-digital-carb-sync/blob/master/part1/serial-plot-part1.PNG)
