@@ -3,6 +3,7 @@ Part 4 puts all other parts togehter.
 * freeruning analog read
 * smoothing the values
 * direct serial communication between Arduino and Nextion Display
+  * using Nextion waveform
 
 ## bill of material
 * Arduino Uno
