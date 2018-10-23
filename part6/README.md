@@ -13,7 +13,7 @@ Part 6 is a spezial version that display the pressure as well as the battery vol
 * LiFePo4 motorcycle battery with balancer connector
 
 ## schematic
-![Fritzing](https://github.com/yz88/arduino-digital-carb-sync/blob/master/part5/arduino-carb-sync-part6-001.PNG)
+![Fritzing](https://github.com/yz88/arduino-digital-carb-sync/blob/master/part6/arduino-carb-sync-part6-001.PNG)
 
 ## Nextion layout
-![Nextion Editor](https://github.com/yz88/arduino-digital-carb-sync/blob/master/part5/arduino-carb-sync-part6-002.PNG)
+![Nextion Editor](https://github.com/yz88/arduino-digital-carb-sync/blob/master/part6/arduino-carb-sync-part6-002.PNG)
