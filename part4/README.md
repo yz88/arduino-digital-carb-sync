@@ -15,5 +15,5 @@ Part 4 puts all other parts togehter.
 ![Fritzing](https://github.com/yz88/arduino-digital-carb-sync/blob/master/part4/arduino-carb-sync-part4-001.PNG)
 
 ## Nextion layout
-![Fritzing](https://github.com/yz88/arduino-digital-carb-sync/blob/master/part4/arduino-carb-sync-part4-002.PNG)
+![Nextion Editor](https://github.com/yz88/arduino-digital-carb-sync/blob/master/part4/arduino-carb-sync-part4-002.PNG)
 
