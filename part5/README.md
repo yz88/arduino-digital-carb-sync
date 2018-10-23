@@ -17,3 +17,5 @@ Part 5 uses Nextion's progressbar instead of waveform.
 ## Nextion layout
 ![Nextion Editor](https://github.com/yz88/arduino-digital-carb-sync/blob/master/part5/arduino-carb-sync-part5-002.PNG)
 
+## Demo video
+https://youtu.be/DKk2O86xgPw
