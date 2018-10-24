@@ -1,5 +1,5 @@
 # arduino-nextion-serial-communictaion
-Part 6 is a spezial version that display the pressure as well as the battery voltage from a LiFePo4 (4s2p) motorcycle battery
+Part 6 is a spezial version that displays the pressure as well as the battery voltage from a LiFePo4 (4s2p) motorcycle battery
 * freeruning analog read
 * smoothing the values
 * direct serial communication between Arduino and Nextion Display
