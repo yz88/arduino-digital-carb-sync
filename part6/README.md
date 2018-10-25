@@ -5,6 +5,9 @@ Part 6 is a spezial version that displays the pressure as well as the battery vo
 * direct serial communication between Arduino and Nextion Display
   * using Nextion progressbar
 
+## status
+WORK IN PROGRESS
+
 ## bill of material
 * Arduino Uno
 * Analog Pressure Sensors (MPX4115AP)
