@@ -18,14 +18,14 @@ The entire vacuum signal from the intake stroke alone is analyzed for synchroniz
 
 ## step by step development
 
-![Part 1 - Arduino freerunning analog read (first steps)](https://github.com/yz88/arduino-digital-carb-sync/blob/master/part1/)
+[Part 1 - Arduino freerunning analog read (first steps)](https://github.com/yz88/arduino-digital-carb-sync/blob/master/part1/)
 
-![Part 2 - Arduino freerunning analog read and smoothing](https://github.com/yz88/arduino-digital-carb-sync/blob/master/part2/)
+[Part 2 - Arduino freerunning analog read and smoothing](https://github.com/yz88/arduino-digital-carb-sync/blob/master/part2/)
 
-![Part 3 - Arduino and Nextion Display (first steps)](https://github.com/yz88/arduino-digital-carb-sync/blob/master/part3/)
+[Part 3 - Arduino and Nextion Display (first steps)](https://github.com/yz88/arduino-digital-carb-sync/blob/master/part3/)
 
-![Part 4 - Arduino and Nextion Display Waveform](https://github.com/yz88/arduino-digital-carb-sync/blob/master/part4/)
+[Part 4 - Arduino and Nextion Display Waveform](https://github.com/yz88/arduino-digital-carb-sync/blob/master/part4/)
 
-![Part 5 - Arduino and Nextion Display Progressbar (final version)](https://github.com/yz88/arduino-digital-carb-sync/blob/master/part5/)
+[Part 5 - Arduino and Nextion Display Progressbar (final version)](https://github.com/yz88/arduino-digital-carb-sync/blob/master/part5/)
 
-![Part 6 - Spezial version with battery voltage measurment](https://github.com/yz88/arduino-digital-carb-sync/blob/master/part6/)
+[Part 6 - Spezial version with battery voltage measurment](https://github.com/yz88/arduino-digital-carb-sync/blob/master/part6/)
