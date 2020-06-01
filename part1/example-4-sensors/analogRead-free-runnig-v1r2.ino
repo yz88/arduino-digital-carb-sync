@@ -145,8 +145,8 @@ void setup()
     {
         PressureSensor0 = analogVal_ADC0;
         PressureSensor1 = analogVal_ADC1;
-        PressureSensor1 = analogVal_ADC2;
-        PressureSensor1 = analogVal_ADC3;
+        PressureSensor2 = analogVal_ADC2;
+        PressureSensor3 = analogVal_ADC3;
         if (PressureSensor0 < LowestValueSensor0)
         {
             LowestValueSensor0 = PressureSensor0; // store the lowest value
