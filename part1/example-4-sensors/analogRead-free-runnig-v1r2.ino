@@ -12,10 +12,10 @@ volatile int analogVal_ADC2; // Value to store analog result from ADC2
 volatile int analogVal_ADC3; // Value to store analog result from ADC3
 unsigned long time;
 
-#define sensor0 0 // pressure sensor
-#define sensor1 1 // pressure sensor
-#define sensor2 2 // pressure sensor
-#define sensor3 3 // pressure sensor
+#define sensor0 0 // pressure sensor ADC0
+#define sensor1 1 // pressure sensor ADC1
+#define sensor2 2 // pressure sensor ADC2
+#define sensor3 3 // pressure sensor ADC3
 
 int PressureSensor0 = 1023;
 int LowestValueSensor0 = 1023;
