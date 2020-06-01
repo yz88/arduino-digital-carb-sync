@@ -198,8 +198,8 @@ void loop()
     {
         PressureSensor0 = analogVal_ADC0 - DifferenceSensor0;
         PressureSensor1 = analogVal_ADC1 - DifferenceSensor1;
-        PressureSensor1 = analogVal_ADC2 - DifferenceSensor2;
-        PressureSensor1 = analogVal_ADC3 - DifferenceSensor3;
+        PressureSensor2 = analogVal_ADC2 - DifferenceSensor2;
+        PressureSensor3 = analogVal_ADC3 - DifferenceSensor3;
         Serial.print(PressureSensor0);
         Serial.print("  ");
         Serial.print(PressureSensor1);
